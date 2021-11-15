@@ -22,7 +22,7 @@ export const Popup = (props) => {
     let ENDPOINT;
 
     if (process.env.NODE_ENV === 'production') {
-        ENDPOINT = "https://mychatapp786.herokuapp.com/"; // The url of the domain on which you are hosting your backend in production mode
+        ENDPOINT = "https://chat-board-3.herokuapp.com/"; // The url of the domain on which you are hosting your backend in production mode
     }
     else {
         ENDPOINT = "http://localhost:8000";    // The url of the backend server in developement mode

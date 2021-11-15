@@ -10,17 +10,18 @@ import AdminRoute from './routes/AdminRoute';
 const App = () => {
   return (
     <div>
-      <BrowserRouter> 
+      <BrowserRouter>
         <div>
-            <div>
-          <Switch>
-            <Route exact path='/login' component={Login} />
-            {/* <Route exact path='/signup' component={Signup} /> */}
-            <Route exact path='/' component={Popup} />
-            <AdminRoute exact path='/admin/chat' component={Chat} />
-            <AdminRoute exact path='/chat/:id' component={ChatBody} />
-          </Switch>
-        </div>
+          <div>
+            <Switch>
+              <Route exact path='/' component={Popup} />
+              <Route exact path='/login' component={Login} />
+              {/* <Route exact path='/signup' component={Signup} /> */}
+
+              <AdminRoute exact path='/admin/chat' component={Chat} />
+              <AdminRoute exact path='/chat/:id' component={ChatBody} />
+            </Switch>
+          </div>
         </div>
       </BrowserRouter>
     </div>
